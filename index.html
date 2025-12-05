@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Tata Surya</title>
+  <link rel="shortcut icon" href="images/sun.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+<nav>
+  <a href="#home" class="logo">Tata<span class="text-yellow fw-700"> Surya</span></a>
+
+  <div class="hamburger-menu" id="hamburgerMenu" onclick="showMobileMenu()"></div>
+
+  <div class="mobileMenu" id="mobileMenu">
+    <div class="top-section">
+      <a href="#solar-system" class="nav-link" onclick="resetMobileMenu()">Tata Surya</a>
+    </div>
+
+    <div class="bottom-section">
+      <ul>
+        <li onclick="currentSlide(1); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('mercury-info')">Merkurius</a>
+        </li>
+
+        <li onclick="currentSlide(2); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('venus-info')">Venus</a>
+        </li>
+
+        <li onclick="currentSlide(3); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('earth-info')">Bumi</a>
+        </li>
+
+        <li onclick="currentSlide(4); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('mars-info')">Mars</a>
+        </li>
+
+        <li onclick="currentSlide(5); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('jupiter-info')">Jupiter</a>
+        </li>
+
+        <li onclick="currentSlide(6); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('saturn-info')">Saturnus</a>
+        </li>
+
+        <li onclick="currentSlide(7); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('uranus-info')">Uranus</a>
+        </li>
+
+        <li onclick="currentSlide(8); moveToPlanetCarousel(); resetMobileMenu()">
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('neptune-info')">Neptunus</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nav-list">
+    <a href="#solar-system" class="nav-link" onclick="resetDropdown()">Tata Surya</a>
+    <details>
+      <summary class="planets-dropdown fw-300">Planet</summary>
+      <ul>
+        <li onclick="currentSlide(1); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('mercury-info')">Merkurius</a>
+        </li>
+
+        <li onclick="currentSlide(2); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('venus-info')">Venus</a>
+        </li>
+
+        <li onclick="currentSlide(3); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('earth-info')">Bumi</a>
+        </li>
+
+        <li onclick="currentSlide(4); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('mars-info')">Mars</a>
+        </li>
+
+        <li onclick="currentSlide(5); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('jupiter-info')">Jupiter</a>
+        </li>
+
+        <li onclick="currentSlide(6); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('saturn-info')">Saturnus</a>
+        </li>
+
+        <li onclick="currentSlide(7); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('uranus-info')">Uranus</a>
+        </li>
+
+        <li onclick="currentSlide(8); moveToPlanetCarousel()">
+          <i class="fa-solid fa-shuttle-space"></i>
+          <a href="#planet-carousel" class="nav-link" onclick="viewFacts('neptune-info')">Neptunus</a>
+        </li>
+      </ul>
+    </details>
+  </div>
+</nav>
+
+  <header id="home" onclick="resetDropdown()">
+    <div class="carousel" id="planet-carousel">
+      <!-- arrows -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Merkurius</h2>
+          <h3 class="sub-title fw-300 text-yellow">Planet Terkecil</h3>
+          <p class="content">
+             Merkurius merupakan planet terkecil dalam Tata Surya dan yang paling dekat
+            dengan Matahari. Orbitnya mengelilingi Matahari memerlukan waktu 87,97 hari
+            Bumi, menjadikannya periode revolusi tersingkat dibandingkan seluruh planet.
+            Rotasi Merkurius bersifat unik karena mengalami resonansi orbit-rotasi.
+            Eksentrisitas orbitnya merupakan yang terbesar di antara seluruh planet.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="planet mercury"></figure>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Venus</h2>
+          <h3 class="sub-title fw-300 text-yellow">Planet Terpanas</h3>
+          <p class="content">
+            Venus merupakan planet kedua dari Matahari. Namanya berasal dari dewi cinta
+            dan kecantikan dalam mitologi Romawi. Venus termasuk planet kebumian dan
+            sering disebut sebagai “planet kembaran Bumi” karena ukuran, massa, dan
+            komposisinya yang mirip. Sebagai salah satu objek tercerah di langit malam,
+            Venus telah menjadi bagian penting dalam pengamatan astronomi sejak awal
+            sejarah manusia.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="planet venus"></figure>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Earth</h2>
+          <h3 class="sub-title fw-300 text-yellow">Planet yang Mendukung Kehidupan</h3>
+          <p class="content">
+            Bumi adalah planet ketiga dari Matahari dan satu-satunya objek astronomi
+            yang diketahui dapat mendukung kehidupan. Bumi merupakan planet dengan
+            kerapatan tertinggi di Tata Surya, sekaligus yang terbesar di antara empat
+            planet kebumian. Bumi memiliki satu satelit alami, yaitu Bulan. Atmosfernya
+            tersusun terutama atas nitrogen dan oksigen. Bumi terbentuk sekitar 4,5
+            miliar tahun yang lalu.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="planet earth"></figure>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Mars</h2>
+          <h3 class="sub-title fw-300 text-yellow">Planet Merah</h3>
+          <p class="content">
+            Mars adalah planet keempat dari Matahari dan planet terkecil kedua dalam
+            Tata Surya. Hari dan musim di Mars serupa dengan Bumi karena kemiringan
+            sumbu rotasi dan periode rotasinya hampir sama. Mars merupakan lokasi
+            Olympus Mons, gunung berapi terbesar dan gunung tertinggi yang diketahui di
+            Tata Surya. Planet ini memiliki dua satelit kecil yang berbentuk tidak
+            beraturan, yaitu Phobos dan Deimos.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="planet mars"></figure>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Jupiter</h2>
+          <h3 class="sub-title fw-300 text-yellow">Raksasa Gas</h3>
+          <p class="content">
+            Jupiter adalah planet kelima dari Matahari sekaligus yang terbesar dalam
+            Tata Surya. Jupiter merupakan objek tercerah ketiga di langit malam setelah
+            Bulan dan Venus. Planet ini adalah raksasa gas dengan massa lebih dari dua
+            setengah kali jumlah massa seluruh planet lainnya. Jupiter memiliki Bintik
+            Merah Besar, yaitu badai raksasa yang telah diamati sejak abad ke-17 ketika
+            teleskop pertama kali digunakan.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="planet jupiter"></figure>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Saturn</h2>
+          <h3 class="sub-title fw-300 text-yellow">Planet Bercincin</h3>
+          <p class="content">
+            Saturnus merupakan planet keenam dari Matahari dan planet terbesar kedua
+            setelah Jupiter. Ciri paling terkenal dari Saturnus adalah sistem cincinnya
+            yang luas, tersusun atas partikel es, batuan, dan debu. Titan, satelit
+            terbesar Saturnus dan satelit terbesar kedua di Tata Surya, berukuran lebih
+            besar daripada Merkurius dan merupakan satu-satunya satelit yang memiliki
+            atmosfer tebal.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="saturn"></figure>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Uranus</h2>
+          <h3 class="sub-title fw-300 text-yellow">Planet Terdingin</h3>
+          <p class="content">
+            Uranus adalah planet ketujuh dari Matahari dan memiliki diameter terbesar
+            ketiga dalam Tata Surya. Uranus ditemukan pada tahun 1781 oleh William
+            Herschel, yang semula mengira objek tersebut adalah komet atau bintang.
+            Komposisi Uranus mirip dengan Neptunus, dan keduanya dikategorikan sebagai
+            raksasa es karena kandungan es volatilnya lebih tinggi dibandingkan Jupiter
+            dan Saturnus.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="planet uranus"></figure>
+        </div>
+      </div>
+
+      <div class="slide">
+        <div class="description slideUp">
+          <h2 class="title">Neptune</h2>
+          <h3 class="sub-title fw-300 text-yellow">Planet Terluar</h3>
+          <p class="content">
+            Neptunus merupakan planet kedelapan dari Matahari. Dalam Tata Surya, planet
+            ini menempati urutan keempat terbesar berdasarkan diameter, ketiga terbesar
+            berdasarkan massa, dan merupakan raksasa es dengan kerapatan tertinggi.
+            Neptunus memiliki massa 17 kali massa Bumi dan sedikit lebih besar daripada
+            Uranus. Planet ini dikenal sebagai salah satu dari dua raksasa es dalam
+            Tata Surya.
+          </p>
+        </div>
+        <div class="stage">
+          <figure class="planet neptune"></figure>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Solar System -->
+
+  <section class="solar-system-container" id="solar-system" onclick="resetDropdown()">
+    <div class="blob">Hover</div>
+    <div class="solar-system">
+      <div class="orbit-lines mercury-line"></div>
+      <div class="orbit-lines venus-line"></div>
+      <div class="orbit-lines earth-line"></div>
+      <div class="orbit-lines mars-line"></div>
+      <div class="orbit-lines jupiter-line"></div>
+      <div class="orbit-lines saturn-line"></div>
+      <div class="orbit-lines uranus-line"></div>
+      <div class="orbit-lines neptune-line"></div>
+
+      <figure class="solar-sun" onclick="openSidePanel('sideInfoSun')">
+        <img src="images/sun.png" alt="image of sun" />
+      </figure>
+
+      <figure class="solar-mercury" onclick="openSidePanel('sideInfoMercury')">
+        <img src="images/mercury.png" alt="mercury is the first planet" />
+      </figure>
+
+      <figure class="solar-venus" onclick="openSidePanel('sideInfoVenus')">
+        <img src="images/venus.png" alt="venus is the second planet" />
+      </figure>
+
+      <figure class="solar-earth" onclick="openSidePanel('sideInfoEarth')">
+        <img src="images/earth.png" alt="earth is the third planet" />
+      </figure>
+
+      <figure class="solar-mars" onclick="openSidePanel('sideInfoMars')">
+        <img src="images/mars.png" alt="mars is the fourth planet" />
+      </figure>
+
+      <figure class="solar-jupiter" onclick="openSidePanel('sideInfoJupiter')">
+        <img src="images/jupiter.png" alt="jupiter is the fifth planet" />
+      </figure>
+
+      <figure class="solar-saturn" onclick="openSidePanel('sideInfoSaturn')">
+        <img src="images/saturn.png" alt="saturn is the sixth planet" />
+      </figure>
+
+      <figure class="solar-uranus" onclick="openSidePanel('sideInfoUranus')">
+        <img src="images/uranus.png" alt="uranus is the seventh planet" />
+      </figure>
+      <figure class="solar-neptune" onclick="openSidePanel('sideInfoNeptune')">
+        <img src="images/neptune.png" alt="neptune is the eighth planet" />
+      </figure>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
